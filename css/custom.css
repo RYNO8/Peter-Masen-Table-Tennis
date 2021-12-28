@@ -107,6 +107,9 @@ td {
     padding: 150px 0px;
 }
 
+#content_0 {
+	background-attachment: fixed;
+}
 #content_1 {
 	color: #fff;
     background-color: #3281cd;
