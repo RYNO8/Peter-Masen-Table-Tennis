@@ -5,14 +5,14 @@ $('#siteNav').affix({
 	}
 })
 
-/* NOTE: if there are 3 images:
-label them background-0.jpg, background-1.jpg, background-2.jpg
-set TOTALIMAGES to 3*/
-// make sure the colours of the background images contrast with the white foreground text
+// make sure the colours of the background images contrast with the colour of the foreground text
 var backgrounds = ["background-0.jpg", "background-1.jpg", "background-2.jpg"];
-var WAITTIME = 12000; // how many milliseconds to wait between each background image transition
 
-var header = document.getElementById("header")
+// how many milliseconds to wait between each background image transition
+// must be  >= transition duration
+var WAITTIME = 10000; 
+
+var header = document.getElementById("content_0")
 var i = 0;
 changeBackground = function() {
 	header.style.backgroundImage = `url('images/${backgrounds[i]}')`;
