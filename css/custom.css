@@ -104,7 +104,7 @@ td {
 
 
 .content {
-    padding: 70px 50px;
+    padding: 150px 0px;
 }
 
 #content_1 {
@@ -131,7 +131,7 @@ background-color: #f86130;
 .page-footer {
 	text-align: center;
 	color: #fff;
-	background-image: url('../images/tables.jpg');
+	background-image: url('../images/tables_2.jpg');
 	background-size: cover;
 }
 
@@ -140,8 +140,8 @@ background-color: #f86130;
 }
 
 .contact p {
-	font-size: 25px;
-	font-weight: 500;
+	font-size: 20px;
+	font-weight: 300;
 }
 
 .page-footer .small-print {
@@ -231,6 +231,21 @@ background-color: #f86130;
 
 	.navbar-default.affix .navbar-brand {
 		letter-spacing: 0em;
+	}
+}
+
+@media(max-width:473px) {
+	.navbar-default .navbar-brand {
+		font-size: 15px;
+	}
+}
+
+@media(max-width:385px) {
+	.navbar-default .navbar-brand {
+		font-size: 12px;
+	}
+	.navbar-default .navbar-brand span {
+		display: none;
 	}
 }
 
